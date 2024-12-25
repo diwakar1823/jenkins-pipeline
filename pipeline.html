@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Status section */
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.commit-status, .modification-status {
+  width: 48%;
+}
+
+h2 {
+  color: #444;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.status-box {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.status-box p {
+  margin: 5px 0;
+}
+
+.status-box span {
+  font-weight: bold;
+}
+
+.success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.modified {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+}
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jenkins Pipeline - Code Commit & Modification</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Jenkins Pipeline Status</h1>
+    </header>
+    
+    <section class="status">
+      <div class="commit-status">
+        <h2>Latest Commit Status</h2>
+        <div class="status-box success">
+          <p>Commit ID: <span>abc12345</span></p>
+          <p>Status: <span>Successful</span></p>
+        </div>
+      </div>
+      
+      <div class="modification-status">
+        <h2>Code Modification Status</h2>
+        <div class="status-box modified">
+          <p>Code Changes Detected: <span>Yes</span></p>
+          <p>Last Modified: <span>2024-12-25</span></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <p>Jenkins Pipeline - Code Check</p>
+    </footer>
+  </div>
+</body>
+</html>
